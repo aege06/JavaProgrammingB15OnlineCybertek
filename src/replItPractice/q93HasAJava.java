@@ -14,16 +14,12 @@ public class q93HasAJava {
         boolean exists = false;
         Scanner scan = new Scanner(System.in);
         String word = scan.next();
-
-        if(word.substring(0,4).equals(word)) {
-            System.out.println(true);
-        }else if(word.substring(1,4).equals(word)) {
-            System.out.println(true);
-        }else{
-            System.out.println(false);
+        if (word.indexOf("java") == 0 || word.indexOf("java") == 1) {
+            System.out.println(!exists);
+        } else {
+            System.out.println(exists);
         }
     }
-    }
-
+}
 
 
